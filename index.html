@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+
+<body>
+  <h1 id="title">
+    History of Present Illness Survey
+    </h1>
+  <div id="container">
+  <p id="description">Fill out this survey to better inform me about your healthcare needs.<hr><br>* = required field
+   </p>
+
+  <form id="survey-form" action="mailto:KevinL622@gmail.com" method="post"
+enctype="text/plain">
+    <div class="label">
+      <label id="name-label">
+        *Name:
+      </label>
+    </div>
+    <div class="input">
+    <input
+      class="inputBox"
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Enter Full Name IE: First, Last"
+      required>
+    </div>
+  <br>
+  <br>
+
+  <div class="label">
+    <label id="email-label">
+      *Email:
+    </label>
+    </div>
+  <div class="input">
+    <input
+      class="inputBox"
+      id="email"
+      type="email"
+      name="email"
+      placeholder="Enter Email Address"
+      required>
+    </div>
+  <br>
+  <br>
+
+  <div class="label">
+    <label id="number-label">
+      *Age:
+    </label>
+    </div>
+
+  <div class="input">
+    <input
+      class="inputBox"
+      type="number"
+      name="age"
+      id="number"
+      placeholder="Enter Age"
+      required
+      min="1"
+      max="130">
+    </div>
+  <br>
+  <br>
+  <div class="label">
+    <label id="sex">
+      *Sex:
+    </label>
+    </div>
+
+  <div class="input">
+    <input type="radio" value="male" name="sex" required><label>Male</label>
+    <input type="radio" value="female" name="sex" required><label>Female</label>
+    </div>
+    <br>
+    <br>
+
+  <div class="label">
+    <label id="dropdown-label">
+      Ethnicity:
+    </label>
+    </div>
+
+  <div class="input">
+    <select id="dropdown" name="ethnicity">
+      <option selected="selected" id="dropdown-default">
+        Select your ethnicity
+      </option>
+      <option value="Arabic">
+        Arabic
+      </option>
+      <option value="Black/African-American">
+        Black/African American
+      </option>
+      <option value="East-Asian/Pacific-Islander">
+        East Asian/Pacific Islander
+      </option>
+      <option value="Native-American/Indigenous">
+        Native American/Indigenous
+      </option>
+      <option value="Eastern European">
+        Eastern European
+      </option>
+      <option value="White/Caucasian">
+        White/Caucasian
+      </option>
+      <option value="Hispanic/Latino">
+        Hispanic/Latino
+      </option>
+      <option value="South-Asian">
+        South Asian
+      </option>
+      <option value="South-East-Asian">
+        South East Asian
+      </option>
+    </select>
+  </div>
+  <br>
+  <br>
+
+  <div class="compliance">
+    <label id="radio-label">
+      Are you open to making lifestyle changes?<br>(Examples include your diet, exercise habits, sleep schedule, medications taken, etc.)
+    </label>
+    </div>
+
+    <div class="radio-buttons" class="input">
+      <input type="radio" value="yes" name="compliance"><label>Yes</label>
+      <input type="radio" value="no" name="compliance"><label>No</label>
+      <input type="radio" value="maybe" name="compliance"><label>Maybe</label>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="checkbox">
+      <label id="checkbox-label">
+        What health concerns do you have?<br> Check all that apply
+      </label>
+    </div>
+
+    <div id="concerns" class="checkboxes">
+    <ul class="concerns">
+      <li><input type="checkbox" name="concerns" value="checkup"><label>Check-up</label></li>
+      <li><input type="checkbox" name="concerns" value="sportsPhysical"><label>Sports Physical</label></li>
+      <li><input type="checkbox" name="concerns" value="followUp"><label>Follow Up</label></li>
+      <li><input type="checkbox" name="concerns" value="headache"><label>Headache</label></li>
+      <li><input type="checkbox" name="concerns" value="vision"><label>Blurred Vision/Vision Loss</label></li>
+      <li><input type="checkbox" name="concerns" value="cough"><label>Cough</label></li>
+      <li><input type="checkbox" name="concerns" value="congestion"><label>Nasal Congestion</label></li>
+      <li><input type="checkbox" name="concerns" value="throat"><label>Mouth/Throat Pain</label></li>
+      <li><input type="checkbox" name="concern" value="chest pain"><label>Chest Pain</label></li>
+      <li><input type="checkbox" name="concerns" value="breathing"><label>Trouble Breathing</label></li>
+    <li><input type="checkbox" name="concerns" value="stomach"><label>Stomach Pain</label></li>
+    <li><input type="checkbox" name="concerns" value="back"><label>Back Pain</label></li>
+    <li><input type="checkbox" name="concerns" value="pelvic"><label>Pelvic Pain</label></li>
+    <li><input type="checkbox" name="concerns" value="voiding"><label>Difficulty Peeing</label></li>
+    <li><input type="checkbox" name="concerns" value="diarrhea"><label>Diarrhea</label></li>
+      <li><input type="checkbox" name="concerns" value="constipation"><label>Constipation</label></li>
+      <li><input type="checkbox" name="concerns" value="parasthesia"><label>Numbness/Tingling</label></li>
+      <li><input type="checkbox" name="concerns" value="upperExtremity"><label>Arm/Hand Pain</label></li>
+      <li><input type="checkbox" name="concerns" value="lowerExtremity"><label>Leg/Ankle/Foot Pain</label></li>
+      <li><input type="checkbox" name="concerns" value="insomnia"><label>Trouble Sleeping</label></li>
+      <li><input type="checkbox" name="concerns" value="depression"><label>Depression</label></li>
+      <li><input type="checkbox" name="concerns" value="focus"><label>Trouble Focusing/Paying Attention</label></li>
+      <li><input type="checkbox" name="concerns" value="STI"><label>Sexually Transmitted Infections</label></li>
+      <li><input type="checkbox" name="concerns" value="rash"><label>Rash</label></li>
+      <li><input type="checkbox" name="concerns" value="other"><label>Other Concerns: <input type="text" name="concerns" placeholder="Enter Other Concerns"></label></li>
+    </ul>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+  <div class="COLDERAS">
+    <div class="labels">
+      <label id="character">
+        If you are experiencing pain, how would you best describe the pain?
+      </label>
+    </div>
+
+    <div class="inputs">
+       <input type="radio" name="character" value="Achy">Achy
+       <input type="radio" name="character" value="Dull">Dull
+       <input type="radio" name="character" value="Throbbing">Throbbing
+       <input type="radio" name="character" value="Sharp">Sharp
+        <br>
+       <input type="radio" name="character" value="Other">Other Description:
+       <input type="text" name="character" placeholder=" Enter Description" class="painBox">
+    </div>
+<br>
+<br>
+
+<div class="labels">
+  <label id="onset">
+    If applicable, when did your pain/symptoms start?
+  </label>
+    </div>
+
+<div class="inputs">
+  <input type="text" name="onset" class="box" placeholder="Example: 2 days ago">
+  </div>
+<br>
+<br>
+
+<div class="labels">
+  <label id="location">
+   If applicable, where is the pain/symptom located? Please be as specific as possible.
+  </label>
+    </div>
+
+<div class="inputs">
+  <input type="text" class="box" name="location" placeholder="Example: Right Lower Back">
+    </div>
+<br>
+<br>
+
+<div class="labels">
+  <label id="history">
+    Have you had these symptoms before?<br>If yes, when?
+  </label>
+    </div>
+
+<div class="inputs">
+  <input type="radio" value="yes" name="hx"><label>Yes</label>
+  <input type="radio" value="no" name="hx"><label>No</label><br>
+   <input type="text" class="box" name="hx" placeholder="Enter last time pain/symptom was present">
+    </div>
+<br>
+<br>
+
+<div class="labels">
+  <label id="duration">
+   How long does the pain/symptom last when it is present?
+  </label>
+    </div>
+
+<div class="inputs">
+  <input type="text" name="duration" class="box" placeholder="Enter number in seconds, minutes, hours or days">
+    </div>
+<br>
+<br>
+
+<div class="labels">
+  <label id="exacerbation">
+    Is there anything that makes the pain/symptoms worse?
+  </label>
+    </div>
+
+  <div class="inputs">
+    <input type="text" class="box" name="exacerbation" placeholder="Enter what makes the pain/symptoms worse.">
+  </div>
+<br>
+<br>
+
+<div class="labels">
+  <label id="relief">
+    What makes the pain/symptoms better?
+  </label>
+  </div>
+
+  <div class="inputs">
+    <input type="text" class="box" name="relief" placeholder="Examples: ibuprofen, tylenol, rest, etc.">
+    </div>
+<br>
+<br>
+
+<div class="labels">
+  <label id="pain-scale">
+    On a scale from 1-10, 10 being the worst, how painful or bad are the symptoms?
+  </label>
+</div>
+
+    <div class="inputs">
+      <select id="painScale" name="pain-scale">
+        <option selected="selected">Select a Number</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+    </div>
+<br>
+<br>
+  </div>
+    <hr>
+    <br>
+
+  <div class="labels">
+    <label id="additional-comments">
+      Any additional symptoms, comments or concerns?
+    </label>
+    </div>
+
+  <div class="inputs">
+    <textarea id="comments" name="comments" placeholder="Enter Additional Symptoms, Comments or Concerns Here"></textarea>
+    </div>
+  <br>
+  <br>
+
+  <button id="submit">
+    Submit
+  </button>
+    </div>
+  </form>
+
+<footer>
+  &copy; 2018 Kevin Li
+  </footer>
+</body>
+</html>

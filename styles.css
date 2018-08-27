@@ -1,0 +1,100 @@
+body {
+  font-family: Garamond, Helvetica, Arial;
+  background: rgb(135,206,235);
+  text-align: center;
+  font-size: 1rem;
+}
+
+#title{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+p {
+  font-weight: bold;
+}
+
+#container {
+  width: 100%;
+  margin: 3% auto;
+  margin-top: 0;
+  max-width: 700px;
+  min-width: 320px;
+  background: white;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.label {
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+  width: 20%;
+}
+
+.input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  text-align: left;
+}
+
+.labels {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  width: 40%;
+}
+
+.inputs {
+  display: inline-block;
+  vertical-align: bottom;
+  text-align: left;
+  width: 42%
+}
+
+select {
+  padding: 5px;
+}
+
+.concerns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.inputBox{
+  width: 80%
+}
+
+.painBox, .box{
+  width: 100%;
+}
+
+radio {
+  text-align: left;
+}
+
+.checkboxes {
+  text-align: left;
+  margin-left: 10%;
+}
+
+li {
+  list-style-type: none;
+}
+
+textarea {
+  height: 150px;
+  width: 100%;
+}
+
+#submit {
+  border-radius: 5px;
+  padding: 1%;
+}
+
+#submit:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
